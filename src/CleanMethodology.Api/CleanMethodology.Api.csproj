@@ -12,4 +12,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\CleanMethodology.Application\CleanMethodology.Application.csproj" />
+    <ProjectReference Include="..\..\CleanMethodology.Core\CleanMethodology.Core.csproj" />
+    <ProjectReference Include="..\..\CleanMethodology.Infrastructure\CleanMethodology.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
