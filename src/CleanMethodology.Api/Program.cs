@@ -1,8 +1,7 @@
-using CleanMethodology.Api.DependencyInjections;
-using CleanMethodology.Api.Endpoints;
-using CleanMethodology.Application.DependencyInjections;
+using CleanMethodology.Api;
+using CleanMethodology.Application;
 using CleanMethodology.Core.Helpers;
-using CleanMethodology.Infrastructure.DependencyInjections;
+using CleanMethodology.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,9 +21,7 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-// minimal endpoints
-app
-    .RegisterWeatherForecastEndpoints();
+app.UseApiEndpoints();
 
 LogHelper.Info("Application Started");
 

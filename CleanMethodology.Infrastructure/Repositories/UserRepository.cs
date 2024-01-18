@@ -39,4 +39,17 @@ public class UserRepository : IUserRepository
 
         return Task.CompletedTask;
     }
+    public Task<UserEntity> CreateUserAsync(UserEntity user)
+    {
+        user.UserId = _users.Max(x => x.UserId) + 1;
+
+        _users.Add(user);
+
+        return Task.FromResult(user);
+    }
+
+    public Task<List<UserEntity>> ListUserAsync()
+    {
+        return Task.FromResult(_users);
+    }
 }

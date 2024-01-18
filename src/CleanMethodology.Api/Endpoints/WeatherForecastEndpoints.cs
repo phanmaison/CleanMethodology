@@ -17,6 +17,7 @@ public static class WeatherForecastEndpoints
             return forecast;
         })
         .WithName("GetWeatherForecast")
+        .WithTags("WeatherForecast")
         .WithOpenApi();
 
         return app;
@@ -24,11 +25,20 @@ public static class WeatherForecastEndpoints
 
     private static readonly string[] Summaries =
     [
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "Freezing",
+        "Bracing",
+        "Chilly",
+        "Cool",
+        "Mild",
+        "Warm",
+        "Balmy",
+        "Hot",
+        "Sweltering",
+        "Scorching"
     ];
+}
 
-    internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-    {
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-    }
+internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+{
+    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }

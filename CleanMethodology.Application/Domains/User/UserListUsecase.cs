@@ -1,30 +1,27 @@
-﻿namespace CleanMethodology.Application.Domains.User;
+﻿using CleanMethodology.Application.Contracts.Entities.Users;
+using CleanMethodology.Application.Contracts.Repositories;
+
+namespace CleanMethodology.Application.Domains.User;
 
 public class UserListUsecase
 {
-    public UserListUsecase()
+    private readonly IUserRepository _userRepository;
+
+
+    public UserListUsecase(IUserRepository userRepository)
     {
+        _userRepository = userRepository;
     }
 
-    public Task ExecuteAsync()
+    public async Task<List<UserEntity>> ExecuteAsync()
     {
-        return Task.CompletedTask;
+        var users = await _userRepository.ListUserAsync();
+
+        return users;
     }
 
     public class Request
     {
         // search / paging criteria
-    }
-
-    public class UserList
-    {
-        public int UserId { get; set; }
-        public string Username { get; set; } = string.Empty;
-        public string FullName { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-    }
-
-    public class Response : List<UserList>
-    {
     }
 }
