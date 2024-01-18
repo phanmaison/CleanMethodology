@@ -2,7 +2,7 @@
 
 public static class WeatherForecastEndpoints
 {
-    public static void RegisterWeatherForecastEndpoints(this WebApplication app)
+    public static WebApplication RegisterWeatherForecastEndpoints(this WebApplication app)
     {
         app.MapGet("/weatherforecast", () =>
         {
@@ -19,6 +19,7 @@ public static class WeatherForecastEndpoints
         .WithName("GetWeatherForecast")
         .WithOpenApi();
 
+        return app;
     }
 
     private static string[] summaries = new[]

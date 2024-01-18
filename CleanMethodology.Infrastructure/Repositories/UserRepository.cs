@@ -1,5 +1,7 @@
-﻿namespace CleanMethodology.Infrastructure.Repositories;
+﻿using CleanMethodology.Application.Contracts.Repositories;
 
-public class UserRepository
+namespace CleanMethodology.Infrastructure.Repositories;
+
+public class UserRepository : IUserRepository
 {
 }
