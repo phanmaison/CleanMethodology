@@ -10,10 +10,6 @@ var services = builder.Services;
 
 // Add services to the container.
 services
-    .AddEndpointsApiExplorer()
-    .AddSwaggerGen();
-
-services
     .UseApi()
     .UseApplication()
     .UseInfrastructure();
@@ -27,7 +23,8 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 // minimal endpoints
-app.RegisterWeatherForecastEndpoints();
+app
+    .RegisterWeatherForecastEndpoints();
 
 LogHelper.Info("Application Started");
 

@@ -11,7 +11,7 @@ public static class WeatherForecastEndpoints
                 (
                     DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                     Random.Shared.Next(-20, 55),
-                    summaries[Random.Shared.Next(summaries.Length)]
+                    Summaries[Random.Shared.Next(Summaries.Length)]
                 ))
                 .ToArray();
             return forecast;
@@ -22,10 +22,10 @@ public static class WeatherForecastEndpoints
         return app;
     }
 
-    private static string[] summaries = new[]
-    {
+    private static readonly string[] Summaries =
+    [
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+    ];
 
     internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
     {
