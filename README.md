@@ -1,5 +1,5 @@
 # Summary
-A methodology to implement Clean Architecture
+A methodology to implement Clean Architecture.
 
 # Methodology
 `Methodology` is `a particular procedure or set of procedures to do something` or we may repharse it as `step by step actions to do something`.
