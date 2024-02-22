@@ -5,13 +5,13 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Api", "CleanMethodology.Api\CleanMethodology.Api.csproj", "{E47CD4CF-983A-4A6F-8A7C-EACE319D02F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Application", "..\CleanMethodology.Application\CleanMethodology.Application.csproj", "{429BBD43-47FD-4A55-BAB1-5D16547E6B19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Application", "CleanMethodology.Application\CleanMethodology.Application.csproj", "{429BBD43-47FD-4A55-BAB1-5D16547E6B19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Core", "..\CleanMethodology.Core\CleanMethodology.Core.csproj", "{787A51DE-BE35-40ED-9FC9-C33244204B6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Core", "CleanMethodology.Core\CleanMethodology.Core.csproj", "{787A51DE-BE35-40ED-9FC9-C33244204B6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Infrastructure", "..\CleanMethodology.Infrastructure\CleanMethodology.Infrastructure.csproj", "{06C4F262-9237-4262-A3F6-C3228A0A3CE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Infrastructure", "CleanMethodology.Infrastructure\CleanMethodology.Infrastructure.csproj", "{06C4F262-9237-4262-A3F6-C3228A0A3CE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Application.Contracts", "..\CleanMethodology.Application.Contracts\CleanMethodology.Application.Contracts.csproj", "{F1C5042A-23D3-4959-B56B-92603C2D2536}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanMethodology.Application.Contracts", "CleanMethodology.Application.Contracts\CleanMethodology.Application.Contracts.csproj", "{F1C5042A-23D3-4959-B56B-92603C2D2536}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{96C5B1B1-73A0-4C4B-B520-20C722AF2097}"
 	ProjectSection(SolutionItems) = preProject

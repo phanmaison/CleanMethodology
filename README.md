@@ -1,13 +1,13 @@
 # Summary
-A methodology to implement Clean Architecture.
+A methodology to implement Clean Architecture
 
-# Methodology
 `Methodology` is `a particular procedure or set of procedures to do something` or we may repharse it as `step by step actions to do something`.
 
 # Overview
-We all have habit, it can be good or bad. Ask yourself this question: `what is your methodology to develop a new feature?` (or what are your activities to develop a new feature).
-Try to answer the question. There are something popup in your mind, right? It can be:
+Ask yourself this question: `what is your methodology to develop a new feature?` (or what are your activities to develop a new feature).
+There are something popup in your mind, right? It can be:
 - Analyze the requirement
+- Design the database schema
 - Design the UI / create new endpoint
 - Create models
 - Implement business logic
@@ -19,9 +19,11 @@ Try to answer the question. There are something popup in your mind, right? It ca
 
 (if you commit regularly, you may look at history to find out)
 
-It's not right or wrong, everyone has their own methodology. Some are bad and some are good.
+Typically, developer use bottom-up approach. Starting from small blocks and then gather them together to build the feature.
 
-Here I will introduce a methodology.
+However, the other project's stakeholders use top-down approach. They start from the big picture and then break it down into smaller functionalities called `UseCase`.
+
+
 
 # Expectation
 But before that, let define some expectations. There are many ways to write code, a lot of architectures out there. But, there are common things:
@@ -30,6 +32,8 @@ But before that, let define some expectations. There are many ways to write code
 - Code is easy to extend
 
 # Detail implementation
+
+https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg
 
 The business analysis use top-down approach and break down the specification into use-cases already.
 

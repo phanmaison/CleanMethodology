@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CleanMethodology.Application\CleanMethodology.Application.csproj" />
-    <ProjectReference Include="..\..\CleanMethodology.Core\CleanMethodology.Core.csproj" />
-    <ProjectReference Include="..\..\CleanMethodology.Infrastructure\CleanMethodology.Infrastructure.csproj" />
+    <ProjectReference Include="..\CleanMethodology.Application\CleanMethodology.Application.csproj" />
+    <ProjectReference Include="..\CleanMethodology.Core\CleanMethodology.Core.csproj" />
+    <ProjectReference Include="..\CleanMethodology.Infrastructure\CleanMethodology.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
