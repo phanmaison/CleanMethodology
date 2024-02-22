@@ -4,22 +4,11 @@ using CleanMethodology.Application.Contracts.Services;
 
 namespace CleanMethodology.Application.Domains.User;
 
-public class UserCreateUsecase
+public class UserCreateUsecase(
+    IUserRepository _userRepository,
+    IEmailTemplateService _emailTemplateService,
+    IEmailService _emailService)
 {
-    private readonly IUserRepository _userRepository;
-    private readonly IEmailTemplateService _emailTemplateService;
-    private readonly IEmailService _emailService;
-
-    public UserCreateUsecase(
-        IUserRepository userRepository,
-        IEmailTemplateService emailTemplateService,
-        IEmailService emailService)
-    {
-        _userRepository = userRepository;
-        _emailTemplateService = emailTemplateService;
-        _emailService = emailService;
-    }
-
     public async Task<UserEntity> ExecuteAsync(Request request)
     {
         var entity = request.ToUserEntity();

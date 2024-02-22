@@ -23,8 +23,6 @@ Typically, developer use bottom-up approach. Starting from small blocks and then
 
 However, the other project's stakeholders use top-down approach. They start from the big picture and then break it down into smaller functionalities called `UseCase`.
 
-
-
 # Expectation
 But before that, let define some expectations. There are many ways to write code, a lot of architectures out there. But, there are common things:
 - Code is easy to read and understand
@@ -33,18 +31,19 @@ But before that, let define some expectations. There are many ways to write code
 
 # Detail implementation
 
-https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg
+![Clean architecture](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
-The business analysis use top-down approach and break down the specification into use-cases already.
+The `UseCase` is the starting point, it represents the business logic and a domain and it maps directly to business requirement.
 
-So let start from the use-case, e.g. Create User.
+
+Let, e.g. Create User.
 
 Step 1: create use-case class
 - Create a new usecase class named `UserCreateUsecase`
 - Add a method `ExecuteAsync` to the class
 - Comment the business logic need to be implemented
 
-Step 2: create input and output model
+Step 2: define input and output model
 
 Step 3-onward: implement actions in the business logic
 
@@ -58,4 +57,4 @@ Benefits:
 - Easy to test
 
 # Conclusion
-This example may help you to understand Clean Architecture and how to implement it. But it's not the only way to implement it.
+TODO

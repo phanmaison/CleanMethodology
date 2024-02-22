@@ -3,16 +3,8 @@ using CleanMethodology.Application.Contracts.Repositories;
 
 namespace CleanMethodology.Application.Domains.User;
 
-public class UserListUsecase
+public class UserListUsecase(IUserRepository _userRepository)
 {
-    private readonly IUserRepository _userRepository;
-
-
-    public UserListUsecase(IUserRepository userRepository)
-    {
-        _userRepository = userRepository;
-    }
-
     public async Task<List<UserEntity>> ExecuteAsync()
     {
         var users = await _userRepository.ListUserAsync();
